@@ -8,9 +8,9 @@
 typedef int DataType;
 
 // 定义链表节点结构体
-typedef struct Node {
+typedef struct node {
     DataType data;           // 数据域
-    struct Node* next;      // 指向下一个节点的指针
+    struct node* next;      // 指向下一个节点的指针
 } Node;
 
 // 定义链表结构体
