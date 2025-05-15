@@ -1,3 +1,7 @@
+
+#ifndef __VECTOR_H__
+#define __VECTOR_H__
+
 typedef int ElementType;
 typedef struct {
     ElementType *data;   // 指向动态分配数组的指针
@@ -31,3 +35,4 @@ int vector_print(Vector* vector);
 
 
 
+#endif // __VECTOR_H__
