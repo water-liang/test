@@ -1,9 +1,21 @@
 #ifndef __QUEUE_H__
 #define __QUEUE_H__
 
+/*
+*   
+*   front 用于记录队头元素，出队时就将该元素出队。
+*   rear 用于指示下一个元素入队的索引，也就是说入队操作时直接将元素插入 rear 索引位置就可以了。
+*   front 标识已经存储元素，rear标识未存储元素
+*   规定 front(包含)和 rear(不包含)索引之间的元素就是队列元素，
+*   出队操作时，直接向后移动索引 front 就可以了，不需要任何赋值操作。
+*   front 向后移动的方式是：(front + 1) % N
+*   rear 向后移动的方式是：(rear + 1) % N
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 
 
 // 元素类型
