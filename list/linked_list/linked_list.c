@@ -16,7 +16,7 @@ LinkedList* create_linked_list()
 // 销毁链表，释放内存
 int  destroy_linked_list(LinkedList* list)
 {
-    if (list == NULL && list->head == NULL) 
+    if (list == NULL ) 
     {
         return -1; // 链表为空，无法销毁
     }
