@@ -141,7 +141,6 @@ Node * search_binary_tree(BinaryTree *tree, key_t data)
     }
 
     return search_binary_tree_node(tree->root,data);
-
 }
 
 // 先序遍历
@@ -171,5 +170,38 @@ int preorder_binary_tree(BinaryTree *tree)
     return 0;
 }
 
+// 层序遍历
+
+int order_binary_tree(BinaryTree *tree)
+{
+    if(NULL == tree || NULL == tree->root )
+    {
+        return 0;
+    }
+
+    Node * root = tree->root;
+    Node * queue[100];
+    int front = 0;
+    int rear = 0;
+
+    queue[rear++] = root;
+
+    while (front < rear)
+    {
+        Node * node = queue[front++];
+        printf("%d ", node->data);
+
+        if (node->left != NULL)
+        {
+            queue[rear++] = node->left;
+        }
+        if (node->right != NULL)
+        {
+            queue[rear++] = node->right;
+        }
+    }
+    printf("\n");
+    return 0;
+}
 
 

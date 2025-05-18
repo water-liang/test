@@ -50,6 +50,8 @@ int inorder_binary_tree(BinaryTree *tree) ;
 // 后序遍历
 int postorder_binary_tree(BinaryTree *tree) ;
 
+// 层序遍历
 
+int order_binary_tree(BinaryTree *tree);
 
 #endif// __BAT_H__
