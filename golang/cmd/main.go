@@ -35,7 +35,6 @@ func main() {
 		}
 	}
 
-	increment()
 
 	wg.Add(3)
 	go print(chanA, chanB, "a")
